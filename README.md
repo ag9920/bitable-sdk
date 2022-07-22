@@ -14,8 +14,7 @@ bitable-sdk 是基于 github.com/chyroc/lark 对飞书-多维表格的开放API 
 # 使用说明
 
 ## 初始化client
-```
-go
+```go
 
 import (
     bitablesdk "github.com/ag9920/bitable-sdk"
@@ -29,9 +28,11 @@ cli := bitablesdk.MustNewClient("cli_a253xxxxb500b", "6YKq9xxxxpZv6D")
 
 以创建一条新纪录为例：
 
-```
-go
+```go
+
+func demo() {
     ctx := context.Background()
+
 	baseToken := "bascntXKzhMekDgmh6urSeVKPRe"
 	tableID := "tbl8IOVutIT3keAu"
     fields := map[string]interface{}{
@@ -44,5 +45,6 @@ go
     } else {
         fmt.Printf("createRecord success, record=%+#v\n", record)
     }
+}
 
 ```
