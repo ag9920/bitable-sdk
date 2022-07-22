@@ -33,8 +33,8 @@ cli := bitablesdk.MustNewClient("cli_a253xxxxb500b", "6YKq9xxxxpZv6D")
 func demo() {
     ctx := context.Background()
 
-	baseToken := "bascntXKzhMekDgmh6urSeVKPRe"
-	tableID := "tbl8IOVutIT3keAu"
+    baseToken := "bascntXKzhMekDgmh6urSeVKPRe"
+    tableID := "tbl8IOVutIT3keAu"
     fields := map[string]interface{}{
         "多行文本": "test content",
     }
